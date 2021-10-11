@@ -20,6 +20,7 @@ def update() :
         return False
 
     if startChange != lastChange & notifyOption == True:
+        startChange = lastChange
         playsound('notify.wav')
         return True
 
